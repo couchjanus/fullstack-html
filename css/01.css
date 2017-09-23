@@ -1,5 +1,5 @@
 *{
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 body{
@@ -59,3 +59,25 @@ p{
 }
 
 
+.bg{
+    background-size: cover;
+    background-attachment: fixed;
+    height: 20em;
+    width: 100%;
+}
+
+.bg1{
+    background-image: url('../images/1.jpg');
+}
+
+.bg2{
+    background-image: url('../images/2.jpg');
+}
+
+.bg3{
+    background-image: url('../images/3.jpg');
+}
+
+.bg4{
+    background-image: url('../images/1.jpg');
+}
