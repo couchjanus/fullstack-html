@@ -409,7 +409,7 @@ footer{
 .pricing-table {
   padding: 0;
   text-align: center;
-  width:90%;
+  width:80%;
 }
 
 .plan {
@@ -420,7 +420,7 @@ footer{
   color: #333;
   padding: 1em;
   float: left;
-  width: 28%;
+  width: 33%;
   position: relative;
 }
 .pricing-table .most-popular {
