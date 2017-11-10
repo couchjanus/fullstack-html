@@ -137,10 +137,6 @@ p{
     }
 
 .header__nav nav > ul > li a {
-      -moz-transition: color 0.2s ease-in-out;
-      -webkit-transition: color 0.2s ease-in-out;
-      -o-transition: color 0.2s ease-in-out;
-      -ms-transition: color 0.2s ease-in-out;
       transition: color 0.2s ease-in-out;
       color: #555f66;
       display: inline-block;
@@ -165,7 +161,7 @@ p{
       vertical-align: middle;
     }
 
-    .header__nav .nav-container nav label {
+.header__nav .nav-container nav label {
       display: none;
       font-size: 30px;
       color: #555;
@@ -175,72 +171,6 @@ p{
       left: 0;
       cursor: pointer;
       z-index: 50;
-    }
-
-    .header__nav .nav-container nav input[type="checkbox"] {
-      display: none;
-    }
-
-   @media screen and (max-width: 720px) {
-      .header__nav .nav-container h1 {
-        float: none;
-        display: block;
-        margin: 0 auto;
-      }
-    }
-    @media screen and (max-width: 410px) {
-      .header__nav .nav-container h1 {
-        float: right;
-      }
-    }
-    @media screen and (max-width: 340px) {
-      .header__nav .nav-container h1 {
-        visibility: hidden;
-      }
-    }
-    @media screen and (max-width: 720px) {
-      .header__nav .nav-container nav {
-        float: left;
-      }
-    }
-    
-    @media screen and (max-width: 720px) {
-      .header__nav .nav-container nav label {
-        display: block;
-      }
-    }
-    
-    @media screen and (max-width: 720px) {
-      .header__nav .nav-container nav input[type="checkbox"]:checked + ul {
-        left: 0;
-      }
-    }
-
-    @media screen and (max-width: 720px) {
-      .header__nav .nav-container nav ul {
-        background-color: #fff;
-        position: fixed;
-        left: -250px;
-        top: 0;
-        bottom: 0;
-        width: 230px;
-        -webkit-transition: all 200ms ease-in-out;
-        transition: all 200ms ease-in-out;
-        box-shadow: 2px 2px 5px black;
-      }
-    }
-
-    @media screen and (max-width: 720px) {
-      .header__nav .nav-container nav ul li {
-        display: block;
-        margin: 0;
-        padding: 15px 15px;
-        border-bottom: 1px solid #ccc;
-      }
-      .header__nav .nav-container nav ul li:nth-child(1) {
-        border-top: 1px solid #ccc;
-        margin-top: 60px;
-      }
     }
 
 /* Banner */
@@ -320,35 +250,6 @@ footer{
 .footer .icons a {
   color: #bbb;
 }
-
-
-@media only screen and (max-width : 1200px) {
-.footer {
-    padding: 4em 0;
-  }
-}
-
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 720px) {
-
-.footer {
-    padding: 2em 0;
-  }
-
-.footer .copyright {
-      text-align: left;
-    }
-
-.footer .copyright li {
-        border-left: 0;
-        margin-left: 0;
-        padding-left: 0;
-        display: block;
-      }
-}
-
-
 
 /* --------------- */
 
@@ -478,80 +379,6 @@ footer{
     overflow: hidden;
 }
 
-@media (min-width: 960px) {
-    .featured-row {
-        position: relative
-    }
-    .featured-row:before {
-        display: block;
-        content: "";
-        width: 100%;
-        padding-top: 25%
-    }
-    .featured-row>.content {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0
-    }
-}
-
-.featured-row__inner {
-    /*background-color: #ededed*/
-    text-align: center;
-}
-
-@media (min-width: 960px) {
-    .featured-row__inner {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0
-    }
-}
-
-.featured-row__left {
-    position: relative;
-    display: none
-}
-
-@media (min-width: 600px) {
-    .featured-row__left {
-        width: 100%;
-        height: 30rem;
-        float: left;
-        overflow: hidden;
-        display: block
-    }
-}
-
-@media (min-width: 960px) {
-    .featured-row__left {
-        width: 66.666%;
-        height: 100%
-    }
-}
-
-.featured-row__right {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    height: 30rem;
-    float: left;
-    overflow: hidden
-}
-
-@media (min-width: 960px) {
-    .featured-row__right {
-        float: left;
-        width: 33.333%;
-        height: 100%
-    }
-}
-
-
 .featured {
     padding-top: 1em;
     font-size: 1.5em;
@@ -579,13 +406,10 @@ footer{
     background: #fcfc00;
 }
 
-
-
-
 .pricing-table {
   padding: 0;
   text-align: center;
-  width:90%;
+  width:80%;
 }
 
 .plan {
@@ -596,24 +420,9 @@ footer{
   color: #333;
   padding: 1em;
   float: left;
-  width: 28%;
+  width: 33%;
   position: relative;
 }
-
-
-@media only screen and (max-width: 900px) {
-  .pricing-table {
-    margin: 0 auto;
-    max-width: none;
-  }
-
-  .plan {
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-  }
-}
-
 .pricing-table .most-popular {
   z-index: 2;
   top: -13px;
@@ -648,7 +457,7 @@ footer{
   margin: -20px -20px 50px -20px;
   background-color: #eee;
   background-image: -moz-linear-gradient(#fff,#eee);
-  
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
   background-image: -webkit-linear-gradient(#fff, #eee);
   background-image: -o-linear-gradient(#fff, #eee);
   background-image: -ms-linear-gradient(#fff, #eee);
@@ -658,7 +467,7 @@ footer{
 .pricing-table .most-popular h3 {
   background-color: #ddd;
   background-image: -moz-linear-gradient(#eee,#ddd);
-  
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#ddd));
   background-image: -webkit-linear-gradient(#eee, #ddd);
   background-image: -o-linear-gradient(#eee, #ddd);
   background-image: -ms-linear-gradient(#eee, #ddd);
@@ -841,16 +650,35 @@ ul.actions.fit.small li {
 }
 
 
-.col-3 p.desc{
-  text-align: left;
+.grid {
+    padding: 10px 10px 100px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
 }
 
-@media only screen and (max-width: 700px) {
-  
-  .col-3 {
+.grid li {
+    display: inline-block;
+    width: 30%;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+}
+
+.grid figure {
+    margin: 0;
+    position: relative;
+}
+
+.grid figure img {
+    max-width: 100%;
     display: block;
-    margin: 0 auto;
-    width: 50%;
-    
-  }
+    position: relative;
+}
+
+.fimg {
+  float: right;
+  margin: 20px;
 }
