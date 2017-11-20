@@ -3,14 +3,14 @@
 <head>
 <meta charset='UTF-8'>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Title Flex</title>
+<title>Title Grid</title>
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet'>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<script src="js/modernizr.js"></script>
-<link rel='stylesheet prefetch'  href='css/normalize.min.css'>
-<script src='js/prefixfree.min.js'></script>
+
+<link rel='stylesheet prefetch'  href='css/normalize.css'>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
 
 <link rel="stylesheet" type="text/css" href="css/10.css">
 
@@ -27,30 +27,69 @@
         </ul>
   </nav>
 
-  <header>
-            <h1>Создание двух столбцов</h1>
-  </header>
+  <header class="main-head">
+    <div class="logo">CAT</div>
+    <h2 class="site-title">In The Grid</h2>
+  </header><!-- .main-head -->
 
-  <div class="wrapper">
-    <div class="columns">
-      <div class="column main-column">
-        2/3 column
+  <main id="content" class="main-area">
+    <section class="splash grid">
+      <div class="splash-content">
+        <h2 class="content-title">Full Bleed CSS Grid</h2>
+        <div class="splash-text">
+          <p>CSS Grid provides a trivial solution to a complex problem: How to display full-bleed content mixed with center-aligned width-constrained content. This solution elimiates the need for auto-margins and floats while allowing the developer to change the grid globally and see those changes apply to each element individually.</p>
+        </div><!-- .splash-text -->
+      </div><!-- .splash-content -->
+    </section><!-- .splash -->
+
+    <section class="buckets grid">
+      <ul>
+        <li>
+          <img src="images/1.jpg" alt="">
+          <div class="bucket">
+            <h3 class="bucket-title">Grid is great</h3>
+            <p>CSS Grid is a two-dimensional layout tool. </p>
+          </div><!-- .bucket -->
+        </li>
+        <li>
+          <img src="images/1.jpg" alt="">
+          <div class="bucket">
+            <h3 class="bucket-title">Flex is great too</h3>
+            <p>That said, Grid is not always the right option for layuts. </p>
+          </div><!-- .bucket -->
+        </li>
+        <li>
+          <img src="images/1.jpg" alt="">
+          <div class="bucket">
+            <h3 class="bucket-title">Know what tool to use</h3>
+            <p>In some cases Grid and Flex are interchangeable. </p>
+          </div><!-- .bucket -->
+        </li>
+      </ul>
+    </section><!-- .buckets -->
+
+    <section class="more grid">
+      <div class="more-content">
+        <h2 class="content-title">Subgrid would be nice here</h2>
+        <p>The solution provided here is limited by the lack of support for subgrids. <p>
+      </div><!-- .more-content -->
+    </section><!-- .more -->
+
+    <section class="twins grid">
+      <div class="twin">
+        <h2 class="content-title">Grid lets you do unusual things</h2>
+        <p>Creating this layout, where two items share the total available viewport width evenly alongside full-width and centered content, is suprisingly complex if you don't have CSS Grid available.</p>
       </div>
-      <div class="column">
-        1/3 column
+      <div class="twin">
+        <h2 class="content-title">Grid requires a rethink</h2>
+        <p>Seeing this layout you may still think it's better to just use old methods with auto-margins and max-widths. And you <em>can</em>, but looking at the CSS you'll see the Grid approach is both cleaner and easier to understand.</p>
       </div>
-    </div>
+    </section><!-- .twins -->
+  </main>
 
-
-    </section>
-  </div>
-
-
-<!-- Footer -->
-  <footer class="footer">
-    Footer
-
+  <footer class="colophon grid">
+    <aside>Content, layout, design: <a href="#" target="_blank" rel="nofollow">Janus Nic</a>.</aside>
+    <aside>All photos: <a href="#" target="_blank" rel="nofollow">My Cat's Friend</a>.</aside>
   </footer>
-
 </body>
 </html>

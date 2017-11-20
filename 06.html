@@ -3,14 +3,14 @@
 <head>
 <meta charset='UTF-8'>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Title Flex</title>
+<title>Title Grid</title>
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet'>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<script src="js/modernizr.js"></script>
-<link rel='stylesheet prefetch'  href='css/normalize.min.css'>
-<script src='js/prefixfree.min.js'></script>
+
+<link rel='stylesheet prefetch'  href='css/normalize.css'>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
 
 <link rel="stylesheet" type="text/css" href="css/06.css">
 
@@ -26,59 +26,39 @@
           <li><a href="shop.html">Shop</a></li>
         </ul>
   </nav>
+<div class="grid-container">
+  <header class="main-head">
+      <h2 class="site-title">Standard two-column layout</h2>
+  </header><!-- .main-head -->
 
-  <header>
-    <article>
-        <hgroup>
-            <h1>Awesome Product</h1>
-        </hgroup>
+  <main id="content" class="main-content">
+      <h2>Main content area</h2>
+      <p>The main content area is where the magic happens. Right now, the main content is on the left and the sidebar is on the right. If you go into the markup for this document and add <code>dir="rtl"</code> to the <code>html</code> element, the two elements will swap spaces because CSS Grid honors text direction.</p>
 
-    </article>
-  </header>
-  <div class="wrapper">
-    <section class="">
-      <ul class="flex-container">
-        <li class="flex-item">
-          <h2>Card 1</h2>
-          <p>Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
-          </p></li>
-        <li class="flex-item">
-          <h2>Card 2</h2>
-          <p>Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
-          </p></li>
-        <li class="flex-item">
-          <h2>Card 3</h2>
-          <p>Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
-          </p></li>
-        <li class="flex-item">
-          <h2>Card 4</h2>
-          <p>Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
-          </p></li>
-        <li class="flex-item">
-          <h2>Card 5</h2>
-          <p>Posuere varius ullamcorper ipsum adipiscing dignissim ipsum adipiscing a a quisque malesuada quam purus venenatis sagittis fermentum parturient curabitur montes a metus.
-          </p></li>
+  </main>
 
+  <aside class="sidebar">
+      <h3>The Sidebar</h3>
+      <p>The sidebar typically contains things like:</p>
+      <ul>
+          <li>Links</li>
+          <li>Menus</li>
+          <li>Ads</li>
       </ul>
+  </aside>
 
-    </section>
-  </div>
+  <aside class="twin">
+      This should take up half the space
+  </aside>
+  <aside class="twin">
+      This should take up the other half of the space
+  </aside>
 
-  <div class="wrap">
-            <div>A</div>
-            <div>Opportunity is missed by most people because it is dressed in overalls and looks like work.<strong>Thomas A. Edison </strong></div>
-            <div>B</div>
-            <div>C</div>
-            <div>Work is a necessary evil to be avoided. <strong>Mark Twain</strong></div>
-            <div>D</div>
-            <div>E</div>
-            <div>F</div>
-  </div>
 <!-- Footer -->
-  <footer class="footer">
-    Footer
-
+  <footer class="colophon grid">
+      <aside>Content, layout, design: <a href="#" target="_blank" rel="nofollow">Janus Nic</a>.</aside>
   </footer>
 
+</div>
 </body>
 </html>

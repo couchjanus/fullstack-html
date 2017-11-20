@@ -3,14 +3,14 @@
 <head>
 <meta charset='UTF-8'>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Title Flex</title>
+<title>Title Grid</title>
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet'>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<script src="js/modernizr.js"></script>
-<link rel='stylesheet prefetch'  href='css/normalize.min.css'>
-<script src='js/prefixfree.min.js'></script>
+
+<link rel='stylesheet prefetch'  href='css/normalize.css'>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js'></script>
 
 <link rel="stylesheet" type="text/css" href="css/11.css">
 
@@ -27,47 +27,44 @@
         </ul>
   </nav>
 
-  <header>
-            <h1>Создание двух столбцов</h1>
-  </header>
-
-    <main class="main columns">
-      <div class="column main-column">
-        2/3 column
-        <a class="article first-article">
-          <figure class="article-image">
-            <img src="">
-          </figure>
-          <div class="article-body">
-            <h2 class="article-title">
-              <!-- Заголовок -->
-              Заголовок
-            </h2>
-            <p class="article-content">
-              <!-- Контент -->
-              Контент
-            </p>
-            <footer class="article-info">
-              <!-- Информация -->
-              Информация
-            </footer>
-          </div>
-        </a>
-
-      </div>
-
-      <div class="column">
-        1/3 column
-
+  <header class="main-header grid">
+    <div class="header-content grid">
+      <h1>CATs In The Grid</h1>
+      <div class="header-buttons">
+        <a href="#" class="button">Follow</a>
+        <a href="#" class="button button-gray">Go Home</a>
       </div>
     </div>
-  </main>
+  </header>
 
+  <section class="section-ready landing-section">
+    <div class="container grid">
 
-<!-- Footer -->
-  <footer class="footer">
-    Footer
+      <div class="ready-left">
 
+        <h2>Are You Ready? <br>Are You Really READY??</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quam non dignissimos eveniet, itaque quae, id magni nemo hic voluptas libero magnam autem ipsa saepe deserunt eos maxime unde voluptatem!</p>
+        <p>Ullam eos illum, voluptate necessitatibus laudantium, enim rem sed magni facilis vel praesentium minus? Magnam excepturi distinctio atque sint nam facilis recusandae assumenda quibusdam a. Deleniti, obcaecati dolorum tenetur sunt.</p>
+
+      </div>
+
+      <div class="ready-right">
+
+        <img src="images/3.jpg" alt="Example" class="img-responsive">
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-logo">
+        We Are Cars in <span>The Grid</span>
+      </div>
+      <div class="footer-copy">~©~</div>
+    </div>
   </footer>
 
 </body>

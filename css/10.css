@@ -1,53 +1,205 @@
+/*CSS Reset*/
+
 html {
   font-size: 62.5%;
 }
 
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:     100%;
+}
+
 body {
-  font-size: 1.5em;
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: Raleway, Arial, sans-serif;
-  color: #222;
+    margin: 0;
 }
 
-.wrapper {
-  margin: 0 auto;
-  width: 90%;
+img {
+    display: block;
+    border: 0;
+    max-width: 100%;
+    height: auto;
 }
 
-.flex-container{
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: nowrap;
-  align-content: stretch;
+/* Typography */
+body,
+button,
+input,
+select,
+textarea {
+    color: #404040;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 1.5em;
+    line-height: 1.6;
+    font-weight: 400;
 }
 
-.flex-item{
-  border: 2px solid #ccc;
-  border-radius:5px;
-  font-size: 1.2em;
-  background-color: deepskyblue;
-  color: #fff;
-  padding: 5px;
-  margin-top: 10px;
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 1em 0;
 }
 
-.flex-item h2 {
-  background-color: #4949dd;
-  margin: 0;
-  padding: 10px;
-  text-align: center;
+p {
+    margin: 0;
+    padding: 1em 0;
 }
 
-.flex-item p {
-  padding: 10px;
+/* General styles */
+.main-head{
+  height: 30vh;
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  color: #555;
+  max-height: 30vh;
 }
+/* Promo section */
+
+.logo,
+.site-title {
+    text-align: center;
+}
+
+.logo {
+    font-size: 8em;
+}
+
+.site-title {
+    margin-top: -1em;
+    margin-bottom: 3em;
+}
+
+/* Splash section */
+
+.splash {
+    background: #FFF6E5;
+    padding-bottom: 2em;
+}
+
+.splash-content {
+    padding: 1.5em;
+}
+
+@media screen and (min-width: 600px) {
+    .splash-text {
+        columns: 2;
+        column-gap: 2em;
+    }
+
+    .splash-text p {
+        padding-top: 0;
+    }
+}
+
+.more {
+    padding: 2em;
+}
+
+
+/* Buckets section */
+
+.buckets {
+    padding: 2em 1em 1em;
+    background: #3E454C;
+}
+
+.buckets ul {
+    margin: 0;
+    padding: 0;
+}
+
+.buckets li {
+    margin-bottom: 1em;
+    background: white;
+    list-style-type: none;
+}
+
+.bucket {
+    padding: 1.5em;
+}
+
+
+/* Twins section */
+
+.twin {
+    padding: 2em;
+    background: #2185C5;
+    color: white;
+}
+
+.twin:last-of-type {
+    background: #FF7F66;
+}
+
+/* Colophon section */
+.colophon {
+    padding: 2em;
+    background: hsl(0, 0%, 10%);
+    color: white;
+    text-align: center;
+}
+
+.colophon a {
+    color: white;
+}
+
+.colophon a:hover,
+.colophon a:focus {
+    border-bottom: 1px solid white;
+}
+
+@supports not (display: grid) {
+    .grid {
+        max-width: 50em;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    @supports (display: flex) {
+
+        .buckets ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .buckets li {
+            width: 31%;
+        }
+
+    }
+}
+
+@media screen and (min-width: 600px) {
+    /* Layout with CSS Grid */
+    @supports (display: grid) {
+
+        /* Four-column layout. Two center columns have a total max width of 50em: */
+        .grid {
+
+            display: grid;
+            grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+        }
+
+        /* Center items by placing them in the two center columns: */
+        .splash-content,
+        .more-content,
+        .buckets ul {
+            grid-column: 2/4;
+        }
+
+        /* Use automatic grid placement + span to let each item span two columns:*/
+        .twin,
+        .colophon aside {
+            grid-column: span 2;
+        }
+
+    }
+}
+
+
+/*navigation*/
 
 .navigation {
   list-style: none;
@@ -95,25 +247,4 @@ body {
   .navigation li:last-of-type a {
     border-bottom: none;
   }
-}
-
-
-.columns {
-  display: flex;
-}
-
-.column {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.main-column {
-  flex: 2;
 }
