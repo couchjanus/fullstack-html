@@ -1,0 +1,36 @@
+body {
+  text-align: center;
+  background: #FFD34E;
+  color: #FFFAD5;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  background-color: #BD4932;
+}
+
+li a {
+  display: block;
+  padding: .5em 1em;
+  color: #FFFAD5;
+}
+
+.nav-table {
+  display: table;
+  margin: auto
+}
+
+.nav-inline-block {
+  display: inline-block;
+}
+
+.orange {
+  color: #BD4932;
+}

@@ -1,0 +1,673 @@
+body {
+  padding-top: 5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+/* Menu style */
+
+.navbar-brand:hover{
+    color:#EE3B24;
+}
+
+ul.navbar-nav > .active > a{
+    color:#EE3B24!important;
+}
+ul.navbar-nav > li > a:hover{
+    color:#EE3B24!important;
+}
+ul.navbar-nav > .active > a,
+ul.navbar-nav > li > a:hover {
+    color:#EE3B24!important;
+}
+
+.btn-outline-success.search{
+    background: #000;
+    border:1px solid#EE3B24;
+    color: #EE3B24;
+}
+.btn-outline-success.search:hover{
+    background: #EE3B24;
+    color:#fff;
+    border:1px solid#333;
+}
+
+input.search:focus{
+  border:1px solid #EE3B24;
+}
+
+.navbar-brand span{
+    color:#000;
+}
+
+ul.navbar-nav a {
+    color: #3a3a3a;
+}
+ul.navbar-nav > .active> a:hover{
+    color:#fff !important;
+}
+.dropdown-menu>a:hover,
+.dropdown-menu>a:focus,
+.dropdown-menu>a.active{
+    color: #EE3B24 !important;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #EE3B24;
+}
+
+.custom-toggler.navbar-toggler:hover,
+.custom-toggler.navbar-toggler:active,
+.custom-toggler.navbar-toggler:focus {
+    border:2px solid #fff;
+}
+.custom-toggler.navbar-toggler .navbar-toggler-icon:focus,
+.custom-toggler.navbar-toggler .navbar-toggler-icon:hover,
+.custom-toggler.navbar-toggler .navbar-toggler-icon:active {
+  border:2px solid #EE3B24;
+}
+
+/* Footer Area */
+.footer_top {
+    overflow: hidden;
+    padding: 30px 0px 50px;
+    border-bottom: 1px solid #0F0F0F;
+    background: none repeat scroll 0% 0% #333;
+    color: #AAA;
+}
+
+.footer_copy {
+    background: #222;
+    border-top: 1px solid #555;
+}
+
+.footer_menu li a:before {
+    display: inline-block;
+    margin-right: 8px;
+    color: #5B5B5B;
+    content: "";
+    font-family: FontAwesome;
+}
+
+.menu_head {
+    color: #C5C5C2!important;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 15px 0px 35px 0px;
+}
+
+.menu_head:after {
+    position: absolute;
+    left: 18px;
+    width: 55px;
+    height: 1px;
+    content: "";
+    top: 49px;
+}
+
+.menu_head:before {
+    position: absolute;
+    left: 32px;
+    width: 24px;
+    height: 5px;
+    content: "";
+    display: inline-block;
+    top: 47px;
+}
+
+.footer_mid ul li {
+    margin-top: 20px;
+}
+
+.footer_menu ul li a {
+    text-decoration: none;
+    color: #9E9E9E;
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+.footer_menu_contact ul li {
+    padding: 5px 0px;
+}
+
+.footer_menu_contact li i {
+    width: 20px;
+}
+
+.footer_menu_contact li span:hover {
+    cursor: pointer;
+}
+
+.tags a {
+    display: block;
+    float: left;
+    margin: 3px;
+    padding: 8px 10px;
+    background: none repeat scroll 0% 0% #2C2C2C;
+    color: #C4C4C4;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.tags a:hover {
+    color: #fff;
+}
+
+.footer_social {
+    padding: 20px 0px;
+}
+
+.footer_social i {
+    width: 50px;
+    height: 50px;
+    padding: 14px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 3px;
+}
+
+.footer_bottom {
+}
+
+.footer_bottom p {
+    font-size: 18px;
+    color: #C4C4C4;
+    margin: 25px 0px;
+}
+
+.social-contact li i:hover{
+    color: #EE3B24;
+    border:1px solid #EE3B24;
+}
+
+.footer_menu_contact li i,.footer_menu_contact li span:hover {
+    color:#EE3B24;
+}
+
+.footer_menu ul li a:hover,
+.footer_menu li a:before,
+.footer_menu_contact li span:hover,
+.footer_bottom p span  {
+    color: #EE3B24;
+}
+
+.tags a:hover{
+    background:#EE3B24;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+.row .row {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+#service {
+    padding: 80px 0px;
+}
+
+.main_feature {
+    margin: 40px 0px;
+}
+
+.feature_content:hover .feature_content:after {
+    border: 2px solid #fff!important;
+}
+
+.feature_content:hover i {
+    top: -20px;
+}
+
+.feature_content:hover i,.feature_content:hover  h5 {
+    cursor: pointer;
+}
+
+.feature_content i {
+    font-size: 60px;
+    line-height: 60px;
+    z-index: 3;
+    position: relative;
+    -webkit-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
+    display: block;
+}
+
+.feature_content h5 {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 19px;
+    margin: 0px 0px 30px;
+    text-transform: uppercase;
+    padding-top: 34px;
+    -webkit-transition: all 150ms linear 0s;
+    -o-transition: all 150ms linear 0s;
+    transition: all 150ms linear 0s;
+    letter-spacing: -1px;
+}
+
+.feature_content p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.feature_content a {
+    text-decoration: none;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.feature_content a:hover {
+    text-decoration: none;
+}
+
+.feature_title {
+    position: relative;
+    padding-bottom: 10px;
+    color: #000;
+    font-weight: 00;
+    width: 45%;
+    margin: 10px auto;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.feature_title:hover {
+    cursor: pointer;
+    animation: pulse 1s ease-in-out 100ms both;
+    -webkit-animation: pulse 1s ease-in-out 100ms both;
+    -o-animation: pulse 1s ease-in-out 100ms both;
+}
+
+.feature_title {
+    color: #EE3B24!important;
+}
+
+.divider {
+    display: block;
+    margin: 20px auto;
+    content: "";
+    width: 70px;
+    height: 5px;
+}
+
+.divider{
+    background: #EE3B24;
+}
+
+.btn-featured{
+    text-decoration:none;
+    position: relative;
+    transition: all .3s ease-in-out;
+    background: transparent;
+    border-radius:2px;
+    z-index:1;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 15px 40px !important;
+    text-transform: uppercase;
+    margin-top:20px;
+    margin-right: 10px;
+}
+
+.btn-dark:hover{
+    background: #EE3B24;
+    color: #fff;
+}
+.btn-main:hover{
+    background:#EE3B24;
+    border:1px solid#EE3B24;
+    color: #fff;
+}
+
+.btn-main.featured{
+    background: #EE3B24;
+    border:1px solid#EE3B24;
+    color: #fff;
+}
+
+.btn-main.featured:hover{
+    background: #333;
+    color:#fff;
+    border:1px solid#333;
+}
+
+.feature_content i,.feature_content h5,.feature_content a{
+    color:#000!important;
+}
+.feature_content a:hover{
+    color:#fff;
+}
+
+.feature_content:hover i,.feature_content:hover  h5{
+      color: #EE3B24!important;
+}
+
+.feature-icon {
+    position: relative;
+    margin: 15px auto;
+    font-size: 34px;
+    line-height: 80px;
+}
+
+.feature-icon{
+    color: #EE3B24;
+}
+
+.feature-content {
+    padding: 10px 0px;
+}
+
+.feature-content h4 {
+    line-height: 1.2em;
+}
+
+.feature-content p {
+    margin: 0.5em 0px;
+}
+
+.feature-tab {
+    margin-top: 30px;
+}
+
+.tab-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-pills {
+    border-bottom: 0px;
+}
+
+.single-feature {
+    margin: 10px 0px;
+    border-radius: 4px;
+    position: relative;
+    transition: all .4s ease 0s;
+}
+
+.single-feature:hover,
+.single-feature:hover.single-feature:after,
+.nav-pills li a.active .single-feature,
+.nav-pills li a.active .single-feature:after {
+    background: #555;
+    color: white;
+    opacity: 1;
+}
+
+.nav-pills > li > a {
+    border: 0px!important;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  bottom: 3rem;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+.hero-buttons a{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.hero-buttons .btn-main.dark{
+    background: #fff;
+    color: #222;
+}
+.hero-section {
+    height: 100%;
+    padding-bottom: 60px;
+    padding-top: 200px;
+    overflow: hidden;
+}
+.hero-section .container {
+    height: 100%;
+}
+
+.hero-content {
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+
+.hero-text {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    width: 100%;
+    padding-bottom: 10%;
+}
+
+.hero-title {
+    font-size: 40px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: 600;
+}
+.hero-title span{
+    color: #EE3B24;
+}
+
+.hero-description {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.hero-buttons a.btn{
+    color: #fff;
+    padding: 15px 50px;
+}
+
+.hero-buttons a.btn.solid{
+    margin-left: 10px;
+}
+
+/*.hero-buttons a i{
+    margin-left: 5px;
+}
+*/
+/* Video and video background */
+
+.video-embed {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 */
+    height: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.parallax-overlay{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+     background: url("../images/banner/overaly.png")repeat; 
+}
+.video-background{
+    width: 100%;
+}
+.video-background-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+section{
+    position: relative;
+}
+iframe{
+    border: 0;
+}
+
+@media ( min-width: 768px ) {
+    .video-section {
+        padding: 100px 0;
+    }
+}
+@media ( min-width: 992px ) {
+    .video-section {
+        padding: 120px 0;
+    }
+}
+.video-text{}
+.video-text .panel{
+    border: 0px!important;
+    box-shadow: none;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+.video-text .panel-default{}
+.video-text .panel-group .panel-heading{
+    border-radius: 0px;
+    border-color: #EE3B24;
+    position: relative;
+    padding: 7px 15px;
+    background: #FAFAFA;
+    border-bottom: 1px solid#AFAFAF;
+}
+
+.video-text .panel-group  h4.panel-title a.collapsed:after{
+    font-family: FontAwesome;
+    color: #333;
+    font-size: 14px;
+    right: 0px;
+    position: absolute;
+    z-index: 111;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 0px;
+    text-align: center;
+    content: "";
+}
+.video-text .panel-group  h4.panel-title a:after {
+    font-family: FontAwesome;
+    color: #EE3B24;
+    font-size: 14px;
+    right: 0px;
+    position: absolute;
+    z-index: 111;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 0px;
+    text-align: center;
+    content: "";
+}
+
+.video-text .panel-group .panel-heading.active{
+    border: 1px solid#EE3B24;
+}
+
+
+/*home 1 tab
+===================*/
+
+.video-text .panel-group .p2{
+    background: #FAFAFA;
+    border-bottom: 0px;
+    border-radius: 5px;
+}
+.video-text .panel-group .p2 h4 a span{
+    float: left;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.video-text .panel-group .p2 h4{
+    margin-left: 40px;
+}
+.video-text .panel-group .panel-body.p1{
+    color: #313131;
+    margin-top: -1px;
+}
+.video-text .panel-group .panel-body.p3{
+      background: #fff!important;
+}
+.video-text .panel-group .p2 h4.panel-title a.collapsed:after{
+    font-family: FontAwesome;
+    background: none repeat scroll 0% 0% #363636;
+    color: #FFF;
+    font-size: 14px;
+    left: 0px;
+    position: absolute;
+    z-index: 111;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 0px;
+    text-align: center;
+    content: "";
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.video-text .panel-group .p2 h4.panel-title a:after {
+    font-family: FontAwesome;
+    color: #FFF;
+    font-size: 14px;
+    left: 0px;
+    position: absolute;
+    z-index: 111;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 0px;
+    text-align: center;
+    content: "";
+    background: none repeat scroll 0% 0% #F05743;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.video-text .panel-group .p2.active{
+    background:#EE3B24;
+    color: #fff;
+    padding: 7px 0px;
+    padding-left: 15px;
+}
+
